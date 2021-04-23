@@ -18,13 +18,11 @@ export class UsersService {
   AddNewUsers(users){
     return this.myClient.post(this.urls,users);
   }
-  // DeletUserById(id){
-  //   this.myClient.splice(this.myClient.indexOf(user), 1);
+  // deleteUser(id) {
+  //   return this.myClient.delete(this.urls + "/" + id);
   // }
-  // updateUser(user: User) {
-  //   const index = this.myClient.findIndex(u => user.id === u.id);
-  //   this.myClient[index] = user;
-  // }
+
+
 
 
 }

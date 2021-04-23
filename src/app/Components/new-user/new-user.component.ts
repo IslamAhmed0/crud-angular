@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UsersService} from '../../Services/users.service';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-new-user',
@@ -22,9 +23,11 @@ export class NewUserComponent implements OnInit {
       id:this.id,
       name:this.name,
       phone:this.phone,
-      email:this.email
+      email:this.email,
+      address:this.address
     };
     this.myService.AddNewUsers(user).subscribe();
+    // this.route.navigate('/users');
 
   }
 

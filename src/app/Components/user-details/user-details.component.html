@@ -1,12 +1,47 @@
-<div *ngIf="user=='[object object]'";else notdata>
+    <div class="col-12 mt-3">
+      <div class="card">
 
-  <h1>hello ya {{user.name}}</h1>
-  <h3>your id:{{user.id}}</h3>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <span>name</span>
+            </div>
+            <div class="col-9">
+              <h5>{{ user.name }}</h5>
 
-  <h3>your phone:{{user.phone}}</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <span>email</span>
+            </div>
+            <div class="col-9">
+              <h5>{{ user.email }}</h5>
 
-</div>
-<ng-template #notdata>
-  <p>loading data .................</p>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-3">
+            <span>phone</span>
+          </div>
+          <div class="col-9">
+            <h5>{{ user.phone }}</h5>
 
-</ng-template>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-3">
+              <span>address</span>
+            </div>
+            <div class="col-9">
+              <h5>{{ user.address }}</h5>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
