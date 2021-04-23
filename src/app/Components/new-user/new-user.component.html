@@ -1,0 +1,28 @@
+<form (ngSubmit)="add()">
+<!--  <div class="form-group">-->
+<!--  <label class="col-3" for="id">id</label>-->
+<!--  <input type="text"  [(ngModel)]="id" id="id" class="form-control" [ngModelOptions]="{standalone: true}">-->
+<!--  </div>-->
+  <div class="form-group">
+    <label class="col-3" for="name">name</label>
+    <input type="text" [(ngModel)]="name" id="name" class="form-control" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label class="col-3" for="email">email</label>
+    <input type="email" [(ngModel)]="email" id="email" class="form-control" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label class="col-3" for="phone">phone</label>
+    <input type="phone" [(ngModel)]="phone" id="phone" class="form-control" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div class="form-group">
+    <label class="col-3" for="address">Address</label>
+    <input type="phone" [(ngModel)]="address" id="address" class="form-control" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div class="form-group text-center">
+    <button type="button" class="btn btn-primary mr-2" (click)="add()">Submit</button>
+
+  </div>
+</form>

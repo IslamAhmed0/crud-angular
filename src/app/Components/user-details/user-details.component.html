@@ -1,0 +1,12 @@
+<div *ngIf="user=='[object object]'";else notdata>
+
+  <h1>hello ya {{user.name}}</h1>
+  <h3>your id:{{user.id}}</h3>
+
+  <h3>your phone:{{user.phone}}</h3>
+
+</div>
+<ng-template #notdata>
+  <p>loading data .................</p>
+
+</ng-template>
